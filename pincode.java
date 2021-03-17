@@ -2,8 +2,8 @@ import java.util.regex.*;
 
 public class Demo {
    public static void main(String args[]) {
-      String pinCode = "400088";
-      String regex = "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$";
+      String pinCode = "A400088";
+      String regex = "^[A-Z]{1}[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$";
       Pattern p = Pattern.compile(regex);
       Matcher m = p.matcher(pinCode);
       System.out.println("The pin code is: " + pinCode);
